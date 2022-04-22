@@ -1,0 +1,114 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0 3rem;
+  margin: 0;
+  background-color: cyan;
+}
+
+form {
+  overflow: auto;
+}
+h2,
+h4 {
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0 0 0.75em;
+}
+h2 {
+  border-bottom: 1px solid gray;
+  padding-bottom: 0.875em;
+}
+p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.info-container ul > li:first-child {
+  color: red;
+}
+.info-container ul > li:nth-child(2) {
+  color: darkcyan;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.form-container,
+.info-container {
+  background-color: #fff;
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+.form-container,
+.info-container > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.info-container > div > * {
+  flex: 1 1 200px;
+  margin-top: 0.5em;
+}
+.info-container > div > div {
+  text-align: center;
+  color: red;
+}
+
+.form-container > div:last-child {
+  flex: 1 1 250px;
+  float: left;
+}
+
+input,
+textarea {
+  padding: 0.75em 1em;
+  margin: 0.5em;
+}
+input[type="submit"] {
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  display: block;
+}
+
+iframe {
+  height: calc(100% - 50px);
+}
+
+.form-container li {
+  display: inline;
+  margin: 0 4px;
+}
+.form-container li:first-child {
+  color: #4267b2;
+}
+
+.form-container li:nth-child(2) {
+  color: #1da1f2;
+}
+
+.form-container li:nth-child(3) {
+  color: #0072b1;
+}
+
+.form-container li:last-child {
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0;
+    margin: 8px;
+  }
+}

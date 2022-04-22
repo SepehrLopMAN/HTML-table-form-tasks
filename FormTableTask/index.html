@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Form Table Sample</title>
+  </head>
+  <body>
+    <form action="javascript:void(0)">
+      <h1>Job Details:</h1>
+      <table align="center">
+        <tr>
+          <td>Job Title:</td>
+          <td><input type="text" name="jobTitle" /></td>
+        </tr>
+        <tr>
+          <td>Description:</td>
+          <td>
+            <textarea name="description" cols="20" rows="3"></textarea>
+            <p>Brief Description should have atmost 500 characters</p>
+          </td>
+        </tr>
+        <tr>
+          <td>Company Name:</td>
+          <td><input type="name" name="companyName" /></td>
+        </tr>
+        <tr>
+          <td>Contact number:</td>
+          <td><input type="tel" name="contactName" /></td>
+        </tr>
+        <tr>
+          <td>Contact person:</td>
+          <td><input type="text" name="contactName" /></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" name="email" /></td>
+        </tr>
+        <tr>
+          <td>Work Status</td>
+          <td>
+            <input
+              type="radio"
+              name="work-status"
+              id="fullTime"
+              value="full-time"
+            /><label for="fullTime">Full Time</label>
+            <input
+              type="radio"
+              name="work-status"
+              id="partTime"
+              value="part-time"
+            />
+            <label for="partTime">Part Time</label>
+            <input
+              type="radio"
+              name="work-status"
+              id="perDim"
+              value="per-dim"
+            />
+            <label for="perDim">Per Dim</label>
+            <input type="radio" name="work-status" id="others" value="others" />
+            <label for="others">Others</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Salary</td>
+          <td>
+            <input type="number" name="salary" />
+            <select name="currency">
+              <option value="us-dollar">US Dollar</option>
+              <option value="eu-euro">EU Euro</option>
+            </select>
+            <select name="period">
+              <option value="yearly">Yearly</option>
+              <option value="monthly">Monthly</option>
+              <option value="daily">Daily</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Experience(Years)</td>
+          <td><input type="number" name="experience" /></td>
+        </tr>
+        <tr>
+          <td>Locations</td>
+          <td><input type="text" name="locations" /></td>
+        </tr>
+        <tr>
+          <td>Qualifications:</td>
+          <td>
+            <select name="qualifications" multiple>
+              <option value="any">Any</option>
+              <option value="high-school">High School</option>
+              <option value="associate">Associate</option>
+              <option value="pre-bachelors">Pre Bachelors</option>
+            </select>
+            <input type="button" value="ADD>>" /><!-- 
+                Removing Space between buttons
+            --><input type="button" value="<<Remove" />
+            <select name="qualifications-selected" multiple>
+              <option value="any">Any</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="Submit" /></td>
+          <td><input type="reset" /></td>
+        </tr>
+      </table>
+    </form>
+    <table></table>
+  </body>
+</html>
